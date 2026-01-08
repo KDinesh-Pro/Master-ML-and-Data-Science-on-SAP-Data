@@ -11,6 +11,8 @@ Select cast(PI() AS Float) AS 'PIE VAlue'
 Select cast (PI() AS Real) AS 'PIE Value in Short'
 --Section 4 NULL Values
 -- Create New emaployee table
+
+USE SQLFORPro;
 Create TABLE employees(
     Empid VARCHAR(6) PRIMARY KEY NOT NULL,
     EmployeeFName VARCHAR(25) NOT NULL,
@@ -24,4 +26,11 @@ Create TABLE employees(
     DepartmentID VARCHAR(10),
     HireDate Date
 );
+
+
+--Insert Data--
+
+Insert into employees(Empid,EmployeeFName,EmployeeMName,EmployeeLName,EmployeeAge,
+EmployeeDOB,EmployeeSalary,EmployeeLegalID,ReportingTo,DepartmentID,HireDate)VALUES('E001','Dinesh','Kumar','Singh',23.3, Null ,25000,'EID325234','ABHISHEK','D001',Null);
+
 
